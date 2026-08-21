@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>联系我们 - 预约苇草智造机器人产品演示</title>
+  <meta name="description" content="联系苇草智造：邮箱 email@refurge.org，电话 400-XXX-XXXX，地址某市某区某路 88 号 苇草智造大厦。预约产品演示与实训室共建。" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Noto+Sans+SC:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../assets/css/main.css" />
+</head>
+<body data-page="contact">
+
+  <header class="navbar">
+    <div class="container navbar__inner">
+      <a class="brand" href="../index.html" aria-label="苇草智造 首页">
+        <span class="icon-tile"><i data-icon="robot" data-size="24"></i></span>
+        <span>苇草智造</span>
+      </a>
+      <nav class="nav-links" aria-label="主导航">
+        <a class="nav-link" href="../index.html">首页</a>
+        <a class="nav-link" href="about.html">关于我们</a>
+        <a class="nav-link" href="business.html">核心业务</a>
+        <a class="nav-link" href="products.html">产品中心</a>
+        <a class="nav-link" href="news.html">新闻动态</a>
+        <a class="nav-link" href="contact.html">联系我们</a>
+      </nav>
+      <div class="nav-actions">
+        <a class="btn btn-primary" href="contact.html">
+          <span class="icon-wrap"><i data-icon="send" data-size="20"></i></span>预约演示
+        </a>
+        <button class="nav-toggle" type="button" aria-label="打开菜单" aria-expanded="false" aria-controls="mobile-drawer">
+          <span class="icon-wrap"><i data-icon="menu" data-size="24"></i></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="drawer-backdrop" data-drawer-backdrop></div>
+  <aside class="drawer" id="mobile-drawer" aria-label="移动端菜单" aria-hidden="true">
+    <div class="drawer__head">
+      <span class="brand"><span class="icon-tile"><i data-icon="robot" data-size="24"></i></span><span>苇草智造</span></span>
+      <button class="drawer__close" type="button" aria-label="关闭菜单">
+        <span class="icon-wrap"><i data-icon="x" data-size="24"></i></span>
+      </button>
+    </div>
+    <nav class="drawer__links" aria-label="移动端导航">
+      <a href="../index.html">首页</a>
+      <a href="about.html">关于我们</a>
+      <a href="business.html">核心业务</a>
+      <a href="products.html">产品中心</a>
+      <a href="news.html">新闻动态</a>
+      <a href="contact.html">联系我们</a>
+    </nav>
+    <div class="drawer__actions">
+      <a class="btn btn-primary btn-block" href="contact.html">
+        <span class="icon-wrap"><i data-icon="send" data-size="20"></i></span>预约演示
+      </a>
+    </div>
+  </aside>
+
+  <main>
+    <section class="page-banner">
+      <div class="container page-banner__inner reveal">
+        <p class="eyebrow">联系我们</p>
+        <h1>聊聊你的机器人教学或研发需求</h1>
+        <p>留下信息，我们将在一个工作日内联系你，提供产品演示、实训室方案或生态合作建议。</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="contact-grid">
+          <!-- 左：联系方式 -->
+          <aside class="card reveal">
+            <h2 class="h3" style="margin-bottom:var(--space-4);">联系方式</h2>
+            <div class="contact-info__item">
+              <span class="icon-tile"><i data-icon="mail" data-size="20"></i></span>
+              <div>
+                <h4>邮箱</h4>
+                <p><a href="mailto:email@refurge.org">email@refurge.org</a></p>
+              </div>
+            </div>
+            <div class="contact-info__item">
+              <span class="icon-tile"><i data-icon="phone" data-size="20"></i></span>
+              <div>
+                <h4>电话</h4>
+                <p class="mono">400-XXX-XXXX</p>
+              </div>
+            </div>
+            <div class="contact-info__item">
+              <span class="icon-tile"><i data-icon="map-pin" data-size="20"></i></span>
+              <div>
+                <h4>地址</h4>
+                <p>某市某区某路 88 号 苇草智造大厦</p>
+              </div>
+            </div>
+            <div class="contact-info__item">
+              <span class="icon-tile"><i data-icon="clock" data-size="20"></i></span>
+              <div>
+                <h4>响应时间</h4>
+                <p>工作日 9:00–18:00，1 个工作日内回复</p>
+              </div>
+            </div>
+          </aside>
+
+          <!-- 右：表单 -->
+          <div class="card reveal reveal--d1">
+            <h2 class="h3" style="margin-bottom:var(--space-4);">预约演示 / 咨询</h2>
+            <form class="contact-form" data-contact-form novalidate>
+              <div class="form-field">
+                <label for="cf-name">姓名<span class="req">*</span></label>
+                <input class="form-control" type="text" id="cf-name" name="name" placeholder="请输入您的姓名" maxlength="20" autocomplete="name" />
+                <p class="field-error" data-error-for="name">请填写姓名</p>
+              </div>
+              <div class="form-field">
+                <label for="cf-phone">电话<span class="req">*</span></label>
+                <input class="form-control" type="tel" id="cf-phone" name="phone" placeholder="请输入手机号，如 138 0000 0000" maxlength="20" autocomplete="tel" />
+                <p class="field-error" data-error-for="phone">请填写有效的联系电话（11 位手机号）</p>
+              </div>
+              <div class="form-field">
+                <label for="cf-company">公司 / 院校</label>
+                <input class="form-control" type="text" id="cf-company" name="company" placeholder="选填，便于我们提供对口方案" maxlength="40" autocomplete="organization" />
+                <p class="field-error" data-error-for="company">公司名称过长</p>
+              </div>
+              <div class="form-field">
+                <label for="cf-need">需求描述<span class="req">*</span></label>
+                <textarea class="form-control" id="cf-need" name="need" placeholder="请简要描述您的场景：实训室共建 / 课程采购 / 生态合作……" maxlength="500"></textarea>
+                <p class="field-error" data-error-for="need">请填写需求描述（10 字以上）</p>
+                <p class="field-hint"><span data-need-count>0</span> / 500 字</p>
+              </div>
+              <button class="btn btn-primary btn-block" type="submit" data-submit>
+                <span class="icon-wrap" data-submit-icon><i data-icon="send" data-size="20"></i></span>
+                <span data-submit-label>提交预约</span>
+              </button>
+              <p class="form-note">提交即表示同意我们就此次咨询与你联系。我们不会向第三方分享你的信息。</p>
+            </form>
+          </div>
+        </div>
+
+        <!-- 地图占位 -->
+        <div style="margin-top:var(--space-7);">
+          <h2 class="h3 reveal" style="margin-bottom:var(--space-4);">到访与交通</h2>
+          <div class="map-ph reveal">
+            <span class="icon-wrap"><i data-icon="map-pin" data-size="28"></i></span>
+            <p>地图占位 / 此处嵌入高德或百度地图 iframe</p>
+            <p class="meta">某市某区某路 88 号 苇草智造大厦</p>
+          </div>
+          <p class="muted" style="margin-top:var(--space-4);max-width:60ch;">苇草智造大厦位于某区科技园核心区，地铁 2 号线苇草智造站 B 口步行约 8 分钟。如需到访，请提前通过上方表单或电话预约，我们将安排专人接待并演示模块化机器人实训方案。</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <button class="back-to-top" type="button" data-back-to-top aria-label="返回顶部">
+    <span class="icon-wrap"><i data-icon="arrow-up" data-size="20"></i></span>
+  </button>
+
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__cols">
+        <div>
+          <div class="footer__brand">
+            <span class="icon-tile"><i data-icon="robot" data-size="24"></i></span>
+            <span>苇草智造</span>
+          </div>
+          <p class="footer__desc">专注模块化通用机器人与 AI 工程教育，让院校与企业用更低门槛开展机器人教学、研发与实训。</p>
+        </div>
+        <div class="footer__col">
+          <h4>快速链接</h4>
+          <ul>
+            <li><a href="../index.html">首页</a></li>
+            <li><a href="about.html">关于我们</a></li>
+            <li><a href="business.html">核心业务</a></li>
+            <li><a href="products.html">产品中心</a></li>
+            <li><a href="news.html">新闻动态</a></li>
+            <li><a href="contact.html">联系我们</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>核心业务</h4>
+          <ul>
+            <li><a href="business.html">机器人研发</a></li>
+            <li><a href="business.html">AI 与计算机技术培训</a></li>
+            <li><a href="business.html">教育教学</a></li>
+            <li><a href="business.html">模块化通用机器人</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>联系方式</h4>
+          <ul class="footer__contact">
+            <li><span class="icon-wrap"><i data-icon="mail" data-size="16"></i></span><a href="mailto:email@refurge.org">email@refurge.org</a></li>
+            <li><span class="icon-wrap"><i data-icon="phone" data-size="16"></i></span><a href="tel:4000000000">400-XXX-XXXX</a></li>
+            <li><span class="icon-wrap"><i data-icon="map-pin" data-size="16"></i></span><span>某市某区某路 88 号 苇草智造大厦</span></li>
+            <li><span class="icon-wrap"><i data-icon="clock" data-size="16"></i></span><span>工作日 9:00–18:00</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© 2026 苇草智造有限公司 版权所有</span>
+        <span>京ICP备XXXXXXXX号 · <a href="#">公安网备 XXXXXXXXXXXXXX号</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <div class="toast" data-toast role="status" aria-live="polite"></div>
+
+  <script src="../assets/js/icons.js"></script>
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

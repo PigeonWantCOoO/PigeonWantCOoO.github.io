@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>苇草智造 - 塑造未来</title>
+  <meta name="description" content="面向院校与企业提供模块化通用机器人平台，配套 AI 与计算机技术课程体系，已服务 120+ 院校、30+ 制造企业。" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Noto+Sans+SC:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+<body data-page="index">
+
+  <!-- ============ Navbar ============ -->
+  <header class="navbar">
+    <div class="container navbar__inner">
+      <a class="brand" href="index.html" aria-label="苇草智创 首页">
+        <span class="icon-tile"><i data-icon="robot" data-size="24"></i></span>
+        <span>苇草智造</span>
+      </a>
+      <nav class="nav-links" aria-label="主导航">
+        <a class="nav-link" href="index.html">首页</a>
+        <a class="nav-link" href="pages/about.html">关于我们</a>
+        <a class="nav-link" href="pages/business.html">核心业务</a>
+        <a class="nav-link" href="pages/products.html">产品中心</a>
+        <a class="nav-link" href="pages/news.html">新闻动态</a>
+        <a class="nav-link" href="pages/contact.html">联系我们</a>
+      </nav>
+      <div class="nav-actions">
+        <a class="btn btn-primary" href="pages/contact.html">
+          <span class="icon-wrap"><i data-icon="send" data-size="20"></i></span>
+          预约演示
+        </a>
+        <button class="nav-toggle" type="button" aria-label="打开菜单" aria-expanded="false" aria-controls="mobile-drawer">
+          <span class="icon-wrap"><i data-icon="menu" data-size="24"></i></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============ 移动端抽屉 ============ -->
+  <div class="drawer-backdrop" data-drawer-backdrop></div>
+  <aside class="drawer" id="mobile-drawer" aria-label="移动端菜单" aria-hidden="true">
+    <div class="drawer__head">
+      <span class="brand"><span class="icon-tile"><i data-icon="robot" data-size="24"></i></span><span>苇草智造</span></span>
+      <button class="drawer__close" type="button" aria-label="关闭菜单">
+        <span class="icon-wrap"><i data-icon="x" data-size="24"></i></span>
+      </button>
+    </div>
+    <nav class="drawer__links" aria-label="移动端导航">
+      <a href="index.html">首页</a>
+      <a href="pages/about.html">关于我们</a>
+      <a href="pages/business.html">核心业务</a>
+      <a href="pages/products.html">产品中心</a>
+      <a href="pages/news.html">新闻动态</a>
+      <a href="pages/contact.html">联系我们</a>
+    </nav>
+    <div class="drawer__actions">
+      <a class="btn btn-primary btn-block" href="pages/contact.html">
+        <span class="icon-wrap"><i data-icon="send" data-size="20"></i></span>
+        预约演示
+      </a>
+    </div>
+  </aside>
+
+  <main>
+    <!-- ============ Hero ============ -->
+    <section class="hero">
+      <div class="hero__glow" aria-hidden="true"></div>
+      <div class="hero__glow hero__glow--left" aria-hidden="true"></div>
+      <div class="container">
+        <div class="row hero__grid">
+          <div class="col-5">
+            <div class="reveal">
+              <p class="eyebrow">模块化通用机器人平台</p>
+              <h1 class="hero__title">让机器人走进每一间教室与工厂</h1>
+              <p class="hero__lead">面向院校与企业的模块化通用机器人平台，配套 AI 与计算机技术课程体系，从认知、编程到工程认证一站式落地。</p>
+              <div class="hero__cta">
+                <a class="btn btn-primary" href="pages/contact.html">
+                  <span class="icon-wrap"><i data-icon="send" data-size="20"></i></span>
+                  预约产品演示
+                </a>
+                <a class="btn btn-outline" href="pages/products.html">
+                  <span class="icon-wrap"><i data-icon="book-open" data-size="20"></i></span>
+                  下载课程白皮书
+                </a>
+              </div>
+              <div class="hero__trust">
+                <span class="icon-wrap"><i data-icon="check" data-size="16"></i></span>
+                已服务 <span class="mono">120+</span> 院校 · <span class="mono">30+</span> 制造企业
+              </div>
+            </div>
+          </div>
+          <div class="col-7 hero__media">
+            <div class="reveal reveal--d1">
+              <div class="media-frame">
+                <img class="hero__diagram" src="assets/img/robot-module-diagram.svg" alt="苇草智造模块化通用机器人拼装示意图：底盘模块、控制总线、视觉模块、协作臂与扩展接口即插即用" />
+              </div>
+              <div class="hero__badges">
+                <span class="hero-badge"><span class="icon-wrap"><i data-icon="modules" data-size="20"></i></span>即插即用模块</span>
+                <span class="hero-badge"><span class="icon-wrap"><i data-icon="brain" data-size="20"></i></span>AI 视觉感知</span>
+                <span class="hero-badge"><span class="icon-wrap"><i data-icon="cpu" data-size="20"></i></span>统一控制总线</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 业务三栏 ============ -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">核心业务</p>
+          <h2 class="h2">从研发到教育，覆盖机器人全生命周期</h2>
+        </div>
+        <div class="grid-3">
+          <a class="card card--hover card--link reveal" href="pages/business.html">
+            <div class="card-icon-head">
+              <span class="icon-tile"><i data-icon="robot" data-size="24"></i></span>
+              <h3 class="card-title">机器人研发</h3>
+            </div>
+            <p class="card-desc">自研模块化通用机器人本体与控制总线，面向教学、实训与轻工业场景提供稳定可靠的硬件平台。</p>
+            <span class="link-arrow">了解更多 <span class="icon-wrap"><i data-icon="arrow-right" data-size="16"></i></span></span>
+          </a>
+          <a class="card card--hover card--link reveal reveal--d1" href="pages/business.html">
+            <div class="card-icon-head">
+              <span class="icon-tile"><i data-icon="cpu" data-size="24"></i></span>
+              <h3 class="card-title">AI 与计算机技术培训</h3>
+            </div>
+            <p class="card-desc">围绕 ROS、Python 与机器视觉构建阶梯式课程，配套实训云与师资研修，让学员从零上手工程实践。</p>
+            <span class="link-arrow">了解更多 <span class="icon-wrap"><i data-icon="arrow-right" data-size="16"></i></span></span>
+          </a>
+          <a class="card card--hover card--link reveal reveal--d2" href="pages/business.html">
+            <div class="card-icon-head">
+              <span class="icon-tile"><i data-icon="graduation-cap" data-size="24"></i></span>
+              <h3 class="card-title">教育教学</h3>
+            </div>
+            <p class="card-desc">为院校提供实训室共建、教材与认证体系，把真实的工程场景搬进课堂，缩短产学距离。</p>
+            <span class="link-arrow">了解更多 <span class="icon-wrap"><i data-icon="arrow-right" data-size="16"></i></span></span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 核心数据指标带 ============ -->
+    <section class="metrics">
+      <div class="container">
+        <div class="metrics__grid">
+          <div class="metric reveal"><div class="metric__num" data-count="120" data-suffix="+">0</div><div class="metric__label">合作院校</div></div>
+          <div class="metric reveal reveal--d1"><div class="metric__num" data-count="38">0</div><div class="metric__label">机器人功能模块</div></div>
+          <div class="metric reveal reveal--d2"><div class="metric__num" data-count="15000" data-suffix="+">0</div><div class="metric__label">累计培训学员</div></div>
+          <div class="metric reveal reveal--d3"><div class="metric__num" data-count="92" data-suffix="%">0</div><div class="metric__label">学员结业就业率</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 模块化机器人亮点 ============ -->
+    <section class="section">
+      <div class="container">
+        <div class="row" style="align-items:center;">
+          <div class="col-6">
+            <div class="media-frame reveal">
+              <img src="assets/img/robot-module-diagram.svg" alt="苇草智造模块化机器人结构：控制总线连接底盘、视觉、协作臂与扩展接口" />
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="reveal reveal--d1">
+              <p class="eyebrow">模块化架构</p>
+              <h2 class="h2" style="margin-bottom:var(--space-5);">一套接口，无限拼装</h2>
+            </div>
+            <div class="feature-list">
+              <div class="feature-item reveal reveal--d1">
+                <span class="icon-wrap"><i data-icon="modules" data-size="24"></i></span>
+                <div><h4>即插即用模块</h4><p>底盘、视觉、机械臂、传感器均以标准接口发布，十分钟完成功能扩展。</p></div>
+              </div>
+              <div class="feature-item reveal reveal--d2">
+                <span class="icon-wrap"><i data-icon="network" data-size="24"></i></span>
+                <div><h4>统一控制总线</h4><p>全模块共享 CAN/USB 控制总线，一套 SDK 调度整台机器人，降低集成成本。</p></div>
+              </div>
+              <div class="feature-item reveal reveal--d3">
+                <span class="icon-wrap"><i data-icon="layers" data-size="24"></i></span>
+                <div><h4>开源 SDK 与实训云</h4><p>提供 Python / C++ SDK 与云端实训环境，课堂教学与课后练习无缝衔接。</p></div>
+              </div>
+              <div class="feature-item reveal reveal--d4">
+                <span class="icon-wrap"><i data-icon="wrench" data-size="24"></i></span>
+                <div><h4>云端远程调试</h4><p>支持远程固件升级与日志回传，教师可在实训云上统一查看班级设备状态。</p></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 培训体系三段 ============ -->
+    <section class="section section--muted">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">培训体系</p>
+          <h2 class="h2">三步进阶的工程能力养成</h2>
+        </div>
+        <div class="grid-3">
+          <div class="card reveal">
+            <span class="icon-tile icon-tile--lg"><i data-icon="book-open" data-size="24"></i></span>
+            <span class="badge badge--neutral" style="margin-top:var(--space-4);">阶段一</span>
+            <h3 class="card-title" style="margin-top:var(--space-3);">基础认知</h3>
+            <p class="card-desc">ROS 与机器人导论。理解坐标变换、运动学与传感原理，建立系统认知。</p>
+          </div>
+          <div class="card reveal reveal--d1">
+            <span class="icon-tile icon-tile--lg"><i data-icon="flask-conical" data-size="24"></i></span>
+            <span class="badge badge--neutral" style="margin-top:var(--space-4);">阶段二</span>
+            <h3 class="card-title" style="margin-top:var(--space-3);">编程实践</h3>
+            <p class="card-desc">Python 与机器视觉。在实训云上完成目标识别、路径规划与抓取控制项目。</p>
+          </div>
+          <div class="card reveal reveal--d2">
+            <span class="icon-tile icon-tile--lg"><i data-icon="award" data-size="24"></i></span>
+            <span class="badge badge--neutral" style="margin-top:var(--space-4);">阶段三</span>
+            <h3 class="card-title" style="margin-top:var(--space-3);">工程认证</h3>
+            <p class="card-desc">模块化装配与调试认证。通过整机组装、总线调试与现场排故考核，获得工程能力证书。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 新闻精选 ============ -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">新闻动态</p>
+          <h2 class="h2">来自苇草智造的最新进展</h2>
+        </div>
+        <div class="news-grid">
+          <a class="card card--hover card--link news-card reveal" href="pages/news-detail.html">
+            <div class="news-card__meta">
+              <span class="date"><span class="icon-wrap"><i data-icon="calendar" data-size="16"></i></span>2026-06-12</span>
+              <span class="badge badge--news">产品</span>
+            </div>
+            <h3 class="news-card__title">苇草智造 X1 开发者套件正式发布，开放模块化通用机器人生态</h3>
+            <p class="news-card__excerpt">X1 提供统一控制总线与开源 SDK，开发者可基于标准接口快速扩展视觉、机械臂与传感模块。</p>
+            <span class="link-arrow">阅读全文 <span class="icon-wrap"><i data-icon="arrow-right" data-size="16"></i></span></span>
+          </a>
+          <a class="card card--hover card--link news-card reveal reveal--d1" href="pages/news-detail.html">
+            <div class="news-card__meta">
+              <span class="date"><span class="icon-wrap"><i data-icon="calendar" data-size="16"></i></span>2026-05-20</span>
+              <span class="badge badge--news">合作</span>
+            </div>
+            <h3 class="news-card__title">与 XX 职业技术学院共建工业机器人实训基地</h3>
+            <p class="news-card__excerpt">双方将落地模块化机器人实训室，配套课程与师资研修，年培养规模预计超 800 人。</p>
+            <span class="link-arrow">阅读全文 <span class="icon-wrap"><i data-icon="arrow-right" data-size="16"></i></span></span>
+          </a>
+          <a class="card card--hover card--link news-card reveal reveal--d2" href="pages/news-detail.html">
+            <div class="news-card__meta">
+              <span class="date"><span class="icon-wrap"><i data-icon="calendar" data-size="16"></i></span>2026-04-08</span>
+              <span class="badge badge--news">培训</span>
+            </div>
+            <h3 class="news-card__title">2026 全国 AI 与机器人师资研修班开班</h3>
+            <p class="news-card__excerpt">面向院校教师开设 ROS 与机器视觉专题，提供可直接复用的实训项目与教学大纲。</p>
+            <span class="link-arrow">阅读全文 <span class="icon-wrap"><i data-icon="arrow-right" data-size="16"></i></span></span>
+          </a>
+        </div>
+        <div class="text-center" style="margin-top:var(--space-6);">
+          <a class="btn btn-outline" href="pages/news.html">查看全部新闻 <span class="icon-wrap"><i data-icon="arrow-right" data-size="20"></i></span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CTA band ============ -->
+    <section class="section--tight">
+      <div class="container">
+        <div class="cta-band reveal">
+          <h2>把机器人实验室搬进你的校园</h2>
+          <p>从一套模块化平台开始，配套课程、实训云与师资支持，让工程教育即开即用。</p>
+          <a class="btn btn-primary" href="pages/contact.html">
+            <span class="icon-wrap"><i data-icon="send" data-size="20"></i></span>
+            预约演示
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <button class="back-to-top" type="button" data-back-to-top aria-label="返回顶部">
+    <span class="icon-wrap"><i data-icon="arrow-up" data-size="20"></i></span>
+  </button>
+
+  <!-- ============ Footer ============ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__cols">
+        <div>
+          <div class="footer__brand">
+            <span class="icon-tile"><i data-icon="robot" data-size="24"></i></span>
+            <span>苇草智造</span>
+          </div>
+          <p class="footer__desc">专注模块化通用机器人与 AI 工程教育，让院校与企业用更低门槛开展机器人教学、研发与实训。</p>
+        </div>
+        <div class="footer__col">
+          <h4>快速链接</h4>
+          <ul>
+            <li><a href="index.html">首页</a></li>
+            <li><a href="pages/about.html">关于我们</a></li>
+            <li><a href="pages/business.html">核心业务</a></li>
+            <li><a href="pages/products.html">产品中心</a></li>
+            <li><a href="pages/news.html">新闻动态</a></li>
+            <li><a href="pages/contact.html">联系我们</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>核心业务</h4>
+          <ul>
+            <li><a href="pages/business.html">机器人研发</a></li>
+            <li><a href="pages/business.html">AI 与计算机技术培训</a></li>
+            <li><a href="pages/business.html">教育教学</a></li>
+            <li><a href="pages/business.html">模块化通用机器人</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>联系方式</h4>
+          <ul class="footer__contact">
+            <li><span class="icon-wrap"><i data-icon="mail" data-size="16"></i></span><a href="mailto:email@refurge.org">email@refurge.org</a></li>
+            <li><span class="icon-wrap"><i data-icon="phone" data-size="16"></i></span><a href="tel:4000000000">400-XXX-XXXX</a></li>
+            <li><span class="icon-wrap"><i data-icon="map-pin" data-size="16"></i></span><span>某市某区某路 88 号 苇草智造大厦</span></li>
+            <li><span class="icon-wrap"><i data-icon="clock" data-size="16"></i></span><span>工作日 9:00–18:00</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© 2026 苇草智造有限公司 版权所有</span>
+        <span>京ICP备XXXXXXXX号 · <a href="#">公安网备 XXXXXXXXXXXXXX号</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <div class="toast" data-toast role="status" aria-live="polite"></div>
+
+  <script src="assets/js/icons.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

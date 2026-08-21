@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 360" fill="none" role="img" aria-label="智擎模块化通用机器人拼装示意线稿">
+  <style>
+    .ln   { fill: none; stroke: currentColor; stroke-width: 1.75; stroke-linecap: round; stroke-linejoin: round; }
+    .lnp  { fill: none; stroke: var(--color-primary-600); stroke-width: 1.75; stroke-linecap: round; stroke-linejoin: round; }
+    .fill { fill: var(--neutral-surface); stroke: currentColor; stroke-width: 1.75; stroke-linejoin: round; }
+    .fillp{ fill: var(--color-primary-50); stroke: var(--color-primary-600); stroke-width: 1.75; stroke-linejoin: round; }
+    .dot  { fill: var(--color-primary-600); }
+    .dash { fill: none; stroke: var(--neutral-fgSubtle); stroke-width: 1.25; stroke-dasharray: 4 4; }
+    .lbl  { fill: var(--neutral-fgMuted); font-family: 'Inter','Noto Sans SC',sans-serif; font-size: 12px; font-weight: 510; }
+    .lblp { fill: var(--color-primary-600); font-family: 'Inter','Noto Sans SC',sans-serif; font-size: 12px; font-weight: 510; }
+  </style>
+
+  <!-- 地面 -->
+  <line class="ln" x1="40" y1="322" x2="440" y2="322" stroke-opacity="0.5"/>
+
+  <!-- ===== 底盘模块（底部） ===== -->
+  <path class="fill" d="M150 300 L330 300 L312 268 L168 268 Z"/>
+  <circle class="ln" cx="190" cy="312" r="14"/>
+  <circle class="ln" cx="290" cy="312" r="14"/>
+  <line class="ln" x1="190" y1="312" x2="190" y2="300"/>
+  <line class="ln" x1="290" y1="312" x2="290" y2="300"/>
+  <rect class="fillp" x="226" y="280" width="28" height="14" rx="3"/>
+  <text class="lbl" x="150" y="340">底盘模块 M1</text>
+
+  <!-- ===== 控制总线（中部竖线 + 节点） ===== -->
+  <line class="lnp" x1="240" y1="268" x2="240" y2="150"/>
+  <circle class="dot" cx="240" cy="240" r="4"/>
+  <circle class="dot" cx="240" cy="205" r="4"/>
+  <circle class="dot" cx="240" cy="170" r="4"/>
+
+  <!-- ===== 主控制器模块（中部方块） ===== -->
+  <rect class="fill" x="196" y="196" width="88" height="60" rx="8"/>
+  <line class="ln" x1="196" y1="216" x2="284" y2="216" stroke-opacity="0.6"/>
+  <rect class="ln" x="210" y="226" width="22" height="16" rx="3"/>
+  <rect class="ln" x="240" y="226" width="22" height="16" rx="3"/>
+
+  <!-- ===== 视觉感知模块（顶部） ===== -->
+  <rect class="fillp" x="204" y="120" width="72" height="40" rx="8"/>
+  <circle class="lnp" cx="240" cy="140" r="13"/>
+  <circle class="dot" cx="240" cy="140" r="4"/>
+  <line class="ln" x1="216" y1="120" x2="216" y2="106"/>
+  <line class="ln" x1="264" y1="120" x2="264" y2="106"/>
+  <text class="lblp" x="300" y="146">视觉模块 A1</text>
+
+  <!-- ===== 协作机械臂模块（右侧） ===== -->
+  <circle class="ln" cx="318" cy="200" r="10"/>
+  <line class="lnp" x1="318" y1="200" x2="372" y2="168"/>
+  <circle class="ln" cx="372" cy="168" r="8"/>
+  <line class="lnp" x1="372" y1="168" x2="392" y2="120"/>
+  <circle class="dot" cx="392" cy="120" r="5"/>
+  <rect class="fill" x="384" y="108" width="22" height="22" rx="4"/>
+  <text class="lbl" x="318" y="232">协作臂 C1</text>
+
+  <!-- ===== 扩展接口（左侧，即插即用） ===== -->
+  <rect class="fillp" x="120" y="186" width="56" height="34" rx="8"/>
+  <line class="lnp" x1="176" y1="203" x2="196" y2="203"/>
+  <circle class="dot" cx="176" cy="203" r="4"/>
+  <text class="lblp" x="40" y="200">扩展接口</text>
+  <text class="lbl" x="44" y="218">即插即用</text>
+
+  <!-- ===== 标注引线（展示拼装关系） ===== -->
+  <line class="dash" x1="240" y1="280" x2="240" y2="270"/>
+  <path class="dash" d="M300 146 C 286 150 280 152 276 152"/>
+  <path class="dash" d="M44 200 C 96 200 110 198 116 198"/>
+
+  <!-- ===== 数据/信号流动点 ===== -->
+  <circle class="dot" cx="240" cy="150" r="3"/>
+  <circle class="dot" cx="240" cy="268" r="3"/>
+</svg>

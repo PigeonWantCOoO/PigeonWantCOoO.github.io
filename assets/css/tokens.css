@@ -1,0 +1,151 @@
+/* =============================================================
+ * Design Token 变量表 —— 由 design-tokens.json 机器生成
+ * 项目：智擎机器人科技 企业官网 v1.0.0
+ * 规则：实现端所有颜色必须经 var(--token) 引用；
+ *       仅 #fff / #000 允许裸值，其余一律 Token。
+ * ============================================================= */
+
+:root {
+  /* ---------- 品牌主色 primary (Indigo) ---------- */
+  --color-primary-50:  #EEF2FF;
+  --color-primary-100: #E0E7FF;
+  --color-primary-200: #C7D2FE;
+  --color-primary-300: #A5B4FC;
+  --color-primary-400: #818CF8;
+  --color-primary-500: #6366F1;
+  --color-primary-600: #4F46E5;
+  --color-primary-700: #4338CA;
+  --color-primary-800: #3730A3;
+  --color-primary-900: #312E81;
+
+  /* ---------- 第二强调色 secondary (Sky) ---------- */
+  --color-secondary-50: #E0F2FE;
+  --color-secondary-500: #0EA5E9;
+  --color-secondary-600: #0284C7;
+
+  /* ---------- 中性色 neutral (Slate / Gray) ---------- */
+  --neutral-page:         #F8FAFC;
+  --neutral-surface:      #FFFFFF;
+  --neutral-surfaceSubtle:#F1F5F9;
+  --neutral-surfaceMuted: #F3F4F6;
+  --neutral-border:       #E2E8F0;
+  --neutral-borderStrong: #CBD5E1;
+  --neutral-fg:           #0F172A;
+  --neutral-fgMuted:      #475569;
+  --neutral-fgSubtle:     #94A3B8;
+  --neutral-meta:         #64748B;
+
+  /* ---------- 语义色 semantic ---------- */
+  --semantic-success:   #16A34A;
+  --semantic-successBg: #DCFCE7;
+  --semantic-warning:   #D97706;
+  --semantic-warningBg: #FEF3C7;
+  --semantic-danger:    #DC2626;
+  --semantic-dangerBg:  #FEE2E2;
+  --semantic-info:      #0284C7;
+  --semantic-infoBg:    #E0F2FE;
+
+  /* ---------- 效果色 effect ---------- */
+  --effect-focusRing: rgba(79, 70, 229, 0.35);
+  --effect-heroGlow:  rgba(79, 70, 229, 0.10);
+  --effect-heroGlowStrong: rgba(79, 70, 229, 0.20);
+  --effect-heroGrid:  rgba(79, 70, 229, 0.05);
+  --effect-heroDivider: rgba(15, 23, 42, 0.06);
+  --effect-overlay:   rgba(15, 23, 42, 0.55);
+
+  /* ---------- 品牌渐变 gradient ---------- */
+  --gradient-primary: linear-gradient(135deg, var(--color-primary-500) 0%, var(--color-primary-700) 100%);
+  --gradient-cta:     linear-gradient(135deg, var(--color-primary-600) 0%, var(--color-primary-800) 100%);
+  --gradient-soft:    linear-gradient(180deg, var(--color-primary-50) 0%, var(--neutral-page) 100%);
+
+  /* ---------- 字体 font ---------- */
+  --font-display: 'Inter', 'Noto Sans SC', -apple-system, sans-serif;
+  --font-body:    'Inter', 'Noto Sans SC', -apple-system, sans-serif;
+  --font-mono:    'JetBrains Mono', 'Fira Code', monospace;
+
+  /* 字号 */
+  --text-xs:   12px;
+  --text-sm:   14px;
+  --text-base: 16px;
+  --text-md:   18px;
+  --text-lg:   20px;
+  --text-xl:   24px;
+  --text-2xl:  32px;
+  --text-3xl:  40px;
+  --text-4xl:  48px;
+  --text-hero: 64px;
+
+  /* 字重 */
+  --weight-regular: 400;
+  --weight-medium:  510;
+  --weight-semibold:590;
+
+  /* 行高 */
+  --leading-body:   1.6;
+  --leading-title:  1.25;
+  --leading-display:1.1;
+
+  /* 字距 */
+  --tracking-caps:    0.06em;
+  --tracking-display: -0.02em;
+  --tracking-body:    0;
+
+  /* ---------- 间距 space ---------- */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+  --space-8: 64px;
+  --space-9: 96px;
+
+  /* ---------- 圆角 radius ---------- */
+  --radius-sm:   6px;
+  --radius-md:   8px;
+  --radius-lg:   12px;
+  --radius-xl:   16px;
+  --radius-full: 9999px;
+
+  /* ---------- 阴影 shadow（3 级柔和，无彩色光晕） ---------- */
+  --shadow-1: 0 1px 2px rgba(15,23,42,0.04), 0 1px 3px rgba(15,23,42,0.06);
+  --shadow-2: 0 4px 6px -1px rgba(15,23,42,0.06), 0 2px 4px -2px rgba(15,23,42,0.05);
+  --shadow-3: 0 12px 24px -6px rgba(15,23,42,0.08), 0 4px 8px -4px rgba(15,23,42,0.04);
+
+  /* ---------- 容器 container ---------- */
+  --container-sm:  640px;
+  --container-md:  768px;
+  --container-lg:  1024px;
+  --container-xl:  1200px;
+  --container-2xl: 1320px;
+
+  /* ---------- 栅格 grid ---------- */
+  --grid-columns: 12;
+  --grid-gutter:  24px;
+  --bp-sm: 640px;
+  --bp-md: 768px;
+  --bp-lg: 1024px;
+  --bp-xl: 1280px;
+
+  /* ---------- 动效 motion ---------- */
+  --motion-fast: 120ms;
+  --motion-base: 180ms;
+  --motion-enter: 260ms;
+  --ease-standard: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-hover: ease-out;
+
+  /* ---------- 边框宽度 borderWidth ---------- */
+  --border-hairline: 1px;
+  --border-default:  1px;
+  --border-strong:   1.5px;
+
+  /* ---------- 层级 zIndex ---------- */
+  --z-base:     0;
+  --z-sticky:   100;
+  --z-dropdown: 1000;
+  --z-modal:    1100;
+  --z-toast:    1200;
+}
+
+/* 浅色为默认；如需深色主题在此追加 .dark { ... } 覆盖即可 */
